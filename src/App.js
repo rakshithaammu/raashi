@@ -1,21 +1,23 @@
 import React from 'react'
-import Header from './Components/Header'
-import Body from './Components/Body'
-import Footer from './Components/Footer'
-import './Components/app.css'
+import Navigation from './Components/Navigation'
+import Home from './Components/Home'
+import Contact from './Components/Contact'
+import ToDolist from './Components/ToDolist'
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 const App = () => {
-
-
-
   return (
-    <div className="container">
-      {/* <Header />
-      <Footer />
-      <Body></Body> */}
-      <div className="header"><Header /></div>
-      <div className="body"><Body /></div>
-      <div className="footer"><Footer /></div>
-    </div>
+     <div>
+         <Router>
+             <div>
+                <Navigation/>
+             </div>
+             <Routes>
+                <Route  path='/'  element={<Home/>} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='/todolist' element={<ToDolist />} />
+             </Routes>
+          </Router> 
+   </div> 
   )
 }
 

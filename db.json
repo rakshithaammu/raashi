@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "rakshitha",
+      "complted": false,
+      "id": 2
+    },
+    {
+      "title": "nature",
+      "imageUrl": "",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "title": "",
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "title": "chandana",
+      "id": 5
+    },
+    {
+      "title": "anu",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
